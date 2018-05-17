@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="embedded\images\Vehicle_1.png" />
+    <None Remove="embedded\images\Vehicle_2.png" />
+    <None Remove="embedded\images\Vehicle_3.png" />
+    <None Remove="embedded\images\Vehicle_4.png" />
+    <None Remove="embedded\images\Vehicle_5.png" />
+    <None Remove="embedded\images\Vehicle_6.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="embedded\images\Vehicle_1.png" />
+    <EmbeddedResource Include="embedded\images\Vehicle_2.png" />
+    <EmbeddedResource Include="embedded\images\Vehicle_3.png" />
+    <EmbeddedResource Include="embedded\images\Vehicle_4.png" />
+    <EmbeddedResource Include="embedded\images\Vehicle_5.png" />
+    <EmbeddedResource Include="embedded\images\Vehicle_6.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="RabbitMQ.Client" Version="5.0.1" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.4.118" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
+    <PackageReference Include="Xamarin.Forms.GoogleMaps" Version="2.3.0" />
+    <PackageReference Include="XamEffects" Version="1.4.0" />
+    <PackageReference Include="XLabs.Forms" Version="2.0.5782" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="view\AccountPage.xaml.cs">
+      <DependentUpon>AccountPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="view\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="view\TestPage.xaml.cs">
+      <DependentUpon>TestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="view\ContactPage.xaml.cs">
+      <DependentUpon>ContactPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="view\ReportPage_GetQCVN312014_Hanhtrinh_Vehicle.xaml.cs">
+      <DependentUpon>ReportPage_GetQCVN312014_Hanhtrinh_Vehicle.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="view\ViewLogPage.xaml.cs">
+      <DependentUpon>ViewLogPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="view\TrackingPage.xaml.cs">
+      <DependentUpon>TrackingPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="view\AutocompleteView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="view\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="view\TmpPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA504E89-AC7A-4ADD-A932-50325729C654}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Quanlyphuongtien.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Quanlyphuongtien.iOS</AssemblyName>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PackOnBuild>true</PackOnBuild>
+    <CodePage>65001</CodePage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer: Ty Nguyen Dinh (B6R527NHUY)</CodesignKey>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodesignProvision>VS: vn.quanlyphuongtien.quanlyphuongtien Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodesignKey>iPhone Developer: Ty Nguyen Dinh (B6R527NHUY)</CodesignKey>
+    <CodesignProvision>VS: vn.quanlyphuongtien.quanlyphuongtien Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer: Ty Nguyen Dinh (B6R527NHUY)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <IpaMetadata>Info.plist</IpaMetadata>
+    <BuildIpa>true</BuildIpa>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+<CodesignEntitlements>Info.plist</CodesignEntitlements>
+<CodesignProvision>VS: vn.quanlyphuongtien.quanlyphuongtien Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer: Ty Nguyen Dinh (B6R527NHUY)</CodesignKey>
+    <BuildIpa>true</BuildIpa>
+<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+<CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+<CodesignProvision>VS: vn.quanlyphuongtien.quanlyphuongtien Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <BuildIpa>True</BuildIpa>
+    <CodesignKey>iPhone Distribution: Ty Nguyen Dinh (2JNJ3CCGMQ)</CodesignKey>
+    <IpaPackageName>vn.quanlyphuongtien.quanlyphuongtien</IpaPackageName>
+<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+<IpaMetadata>Info.plist</IpaMetadata>
+<CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+<CodesignProvision>quanlyphuongtien</CodesignProvision>
+<MtouchFloat32>true</MtouchFloat32>
+<DeviceSpecificBuild>true</DeviceSpecificBuild>
+<MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+<IpaIncludeArtwork>true</IpaIncludeArtwork>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignKey>iPhone Distribution: Ty Nguyen Dinh (2JNJ3CCGMQ)</CodesignKey>
+<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+<CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+<MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+<MtouchFloat32>true</MtouchFloat32>
+<CodesignProvision>quanlyphuongtien</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XFService\PhoneService.cs" />
+    <None Include="Entitlements.plist" />
+    <Compile Include="Renderer\BorderlessEntryRenderer.cs" />
+    <Compile Include="Renderer\MultiLineLabelRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-60%403x.png" />
+    <BundleResource Include="Resources\Icon-76.png" />
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-40.png" />
+    <BundleResource Include="Resources\Icon-Small-40%403x.png" />
+    <BundleResource Include="Resources\Icon-Small%403x.png" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\arrow_left_black.png" />
+    <BundleResource Include="Resources\arrow_left.png" />
+    <BundleResource Include="Resources\Down.png" />
+    <BundleResource Include="Resources\exit.png" />
+    <BundleResource Include="Resources\global.png" />
+    <BundleResource Include="Resources\icon.png" />
+    <BundleResource Include="Resources\icons8_password_1.png" />
+    <BundleResource Include="Resources\icons8_pause_96.png" />
+    <BundleResource Include="Resources\icons8_play_96.png" />
+    <BundleResource Include="Resources\icons8_stop_96.png" />
+    <BundleResource Include="Resources\icons8_user.png" />
+    <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\map.png" />
+    <BundleResource Include="Resources\msg.png" />
+    <BundleResource Include="Resources\phone.png" />
+    <BundleResource Include="Resources\report.png" />
+    <BundleResource Include="Resources\setting.png" />
+    <BundleResource Include="Resources\spinter1.png" />
+    <BundleResource Include="Resources\Vehicle_1.png" />
+    <BundleResource Include="Resources\Vehicle_2.png" />
+    <BundleResource Include="Resources\Vehicle_3.png" />
+    <BundleResource Include="Resources\Vehicle_4.png" />
+    <BundleResource Include="Resources\Vehicle_5.png" />
+    <BundleResource Include="Resources\Vehicle_6.png" />
+    <BundleResource Include="Resources\VehicleActive_1.gif" />
+    <BundleResource Include="Resources\VehicleActive_2.gif" />
+    <BundleResource Include="Resources\VehicleActive_3.gif" />
+    <BundleResource Include="Resources\VehicleActive_4.gif" />
+    <BundleResource Include="Resources\VehicleActive_5.gif" />
+    <BundleResource Include="Resources\VehicleActive_6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Google.Maps">
+      <HintPath>..\..\..\..\.nuget\packages\xamarin.google.ios.maps\2.5.0\lib\Xamarin.iOS10\Google.Maps.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference NoWarn="NU1701" Include="Xamarin.Forms.GoogleMaps">
+      <Version>2.3.0</Version>
+    </PackageReference>
+    <PackageReference NoWarn="NU1701" Include="Xamarin.Forms">
+      <Version>2.5.0.280555</Version>
+    </PackageReference>
+    <PackageReference Include="XLabs.Forms">
+      <Version>2.0.5782</Version>
+    </PackageReference>
+    <PackageReference Include="XamEffects">
+      <Version>1.4.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="XFService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Quanlyphuongtien\Quanlyphuongtien.csproj">
+      <NoWarn>NU1701</NoWarn>
+      <Project>{A842B835-7642-41DF-9400-F6C25099B779}</Project>
+      <Name>Quanlyphuongtien</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\abc1 - Copy.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\abc80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\abc120.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\320x480.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\640x960.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\640x1136.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\LOGO.png" />
+  </ItemGroup>
+</Project>

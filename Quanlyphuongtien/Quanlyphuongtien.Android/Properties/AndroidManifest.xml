@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="3" android:versionName="1.0" package="com.companyname.Quanlyphuongtien" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="15" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<application android:label="Quản lý phương tiện" android:icon="@drawable/logo">
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAz_r2NOX1UQpyWtUVDe9Zw5Bl3atxHRZo" />
+	</application>
+</manifest>
